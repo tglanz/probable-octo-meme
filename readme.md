@@ -1,4 +1,4 @@
-# AWS Into
+# AWS Intro
 
 __infrastructure__ folder contains the CDK app with stack to deploy the web server (exercice 1) and the eks cluster (exercise 2)
 
