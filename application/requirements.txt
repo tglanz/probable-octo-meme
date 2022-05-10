@@ -1,0 +1,12 @@
+-i https://pypi.org/simple
+attrs==21.4.0
+cattrs==22.1.0
+cdk8s==1.5.86
+cdk8s-plus-22==1.0.0b219
+constructs==3.3.283
+exceptiongroup==1.0.0rc5
+jsii==1.58.0
+publication==0.0.3
+python-dateutil==2.8.2
+six==1.16.0
+typing-extensions==4.2.0

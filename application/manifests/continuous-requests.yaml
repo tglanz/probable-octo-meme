@@ -1,0 +1,21 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: tglanz-continuous-requests
+spec:
+  schedule: "*/1 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          name: requests-pod
+        spec:
+          containers:
+          - name: tglanz-cron-worker-container
+            image: curlimages/curl
+            imagePullPolicy: IfNotPresent
+            command:
+            - sh
+            - -c
+            - curl tglanz-exercise-service:5000
+          restartPolicy: OnFailure
